@@ -1,31 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Fylo data storage component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./mobile.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (min-device-width:1024px)
+    "
+      href="./desktop.css"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Fylo data storage component</title>
 
-  You’ve used 815 GB of your storage
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <section class="main">
+      <div class="fylo container container--extra-round">
+        <figure href="" class="fylo__logo">
+          <img src="./images/logo.svg" alt="Fylo" />
+        </figure>
+        <div class="fylo__buttons">
+          <button class="buttons__button">
+            <img src="./images/icon-document.svg" alt="New" />
+          </button>
+          <button class="buttons__button">
+            <img src="./images/icon-folder.svg" alt="Open" />
+          </button>
+          <button class="buttons__button">
+            <img src="./images/icon-upload.svg" alt="Upload" />
+          </button>
+        </div>
+      </div>
+      <div class="storage container">
+        <p class="storage__description">
+          You’ve used <b>815 GB</b> of your storage
+        </p>
+        <div class="storage__bar-container">
+          <!-- Storage bar -->
+          <div class="bar-container__inner-bar">
+            <div class="inner-bar__circle"></div>
+          </div>
+        </div>
+        <div class="storage__min-max">
+          <span>0 GB</span>
+          <span>1000 GB</span>
+        </div>
+        <div class="counter container container--light">
+          <span class="counter__digits">185</span>
+          <span class="counter__text">GB LEFT</span>
+        </div>
+      </div>
+    </section>
 
-  185 GB Left
-  
-  0 GB
-  1000 GB
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/pihiwatari">pihiwatari</a>.
+    </div>
+  </body>
 </html>

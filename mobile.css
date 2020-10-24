@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+:root {
+  --paleBlue: hsl(243, 100%, 93%);
+  --grayishBlue: hsl(229, 7%, 55%);
+  --darkBlue: hsl(228, 56%, 26%);
+  --veryDarkBlue: hsl(229, 57%, 11%);
+  --gradientColors: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  padding: 3rem;
+  font-family: Rakeway, "Helvetica Neue", Helvetica;
+  background-image: url("./images/bg-mobile.png");
+  background-size: 100vh;
+  background-repeat: no-repeat;
+  color: var(--paleBlue);
+}
+
+.main {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.container {
+  margin-bottom: 1.5rem;
+  padding: 3rem;
+  background-color: var(--darkBlue);
+  border-radius: 10px;
+}
+
+.container--extra-round {
+  border-top-right-radius: 85px;
+}
+
+.container--light {
+  background-color: #f5f5f5;
+}
+
+.fylo {
+  display: block;
+}
+
+.fylo__logo {
+  margin-bottom: 3rem;
+}
+
+.fylo__buttons {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.buttons__button {
+  margin-right: 2rem;
+  padding: 1rem;
+  height: 5rem;
+  width: 5rem;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--veryDarkBlue);
+}
+
+.storage {
+  position: relative;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.storage__bar-container {
+  margin: 1.2rem 0;
+  padding: 0.1rem;
+  height: 1.5rem;
+  width: 100%;
+  border-radius: 20px;
+  background-color: var(--veryDarkBlue);
+}
+
+.bar-container__inner-bar {
+  padding: 0.1rem;
+  width: calc(100% - 18.5%);
+  height: 100%;
+  border-radius: 20px;
+  background-image: linear-gradient(
+    to right,
+    hsl(6, 100%, 80%),
+    hsl(335, 100%, 65%)
+  );
+}
+
+.inner-bar__circle {
+  margin-left: auto;
+  height: 100%;
+  width: 1rem;
+  border-radius: 1rem;
+  background-color: #f5f5f5;
+}
+
+.storage__min-max {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.2rem 0;
+  width: 50%;
+  position: absolute;
+  left: 25%;
+  font-weight: 700;
+}
+
+.counter__digits {
+  margin-right: 1rem;
+  font-size: 3rem;
+  color: #1f1f1f;
+}
+
+.counter__text {
+  justify-self: center;
+  color: var(--grayishBlue);
+}
+
+.attribution {
+  position: fixed;
+  bottom: 5px;
+  font-size: 1.6rem;
+  text-align: center;
+}
+.attribution a {
+  color: var(--paleBlue);
+}
